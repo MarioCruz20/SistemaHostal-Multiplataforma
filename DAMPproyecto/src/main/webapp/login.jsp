@@ -154,7 +154,7 @@
                     <div class="col-lg-6 d-flex align-items-center justify-content-center p-4 p-md-5" style="min-height: 100vh;">
                         <div class="card card-login p-4 p-md-5 w-100" style="max-width: 440px;">
                             <div class="text-center mb-4">
-                                <h4 class="brand-title mb-2">HOSTAL ITCA-FEPADE</h4>
+                                <h4 class="brand-title mb-2">Paradise Resort</h4>
                                 <p class="text-muted mb-0">Información Gerencial para Hostal</p>
                             </div>
 
