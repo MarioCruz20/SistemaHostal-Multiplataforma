@@ -5,6 +5,51 @@
 Aplicación multiplataforma desarrollada en Java para la gestión de un hostal.
 Permite administrar habitaciones, clientes, reservas y pagos mediante una conexión a una base de datos SQL Server.
 
+## Funcionalidades del Sistema
+
+El sistema permite gestionar las operaciones principales de un hostal mediante diferentes módulos:
+
+###  Habitaciones
+- Registro de nuevas habitaciones
+- Configuración de:
+  - Número
+  - Tipo
+  - Capacidad
+  - Precio
+  - Estado
+  - Servicios adicionales
+- Búsqueda y filtrado por número, tipo o estado
+
+### Huéspedes
+- Registro de clientes
+- Filtrar por nombre, DUI, teléfono o email
+
+###  Reservas
+- Creación de reservas
+- Asociación de clientes y habitaciones
+- Control de fechas de entrada y salida
+
+###  Pagos
+- Registro de pagos asociados a reservas
+- Control de estados de pago
+
+### Usuarios / Roles
+- Creación de acceso a usuarios
+
+### Proveedores
+- Creación para registro de proveedores
+
+### Reportes
+- Generación de reportes de reservas por fechas
+
+### Gráficos
+-Resumen con gráficos que muestran:
+   - Ocupación por mes
+   - Ingresos por habitaciones
+   - Servicios adicionales más vendidos
+
+---
+
 ## Requisitos
 
 * Java JDK 17 o superior
@@ -65,25 +110,6 @@ private static final String PASSWORD = "TU_CONTRASEÑA";
 
 > Asegúrate de que SQL Server esté en ejecución en tu máquina local.
 
----
-
-## Acceso al Sistema
-
-Una vez ejecutado el proyecto, podrás iniciar sesión con las siguientes credenciales por defecto:
-
-- **Usuario:** `admin`  
-- **Contraseña:** `Admin123`
-
----
-
-## Ejecución
-
-1. Abrir el proyecto en el IDE (NetBeans / IntelliJ / Eclipse).
-2. Compilar el proyecto.
-3. Ejecutar la clase principal.
-4. Iniciar sesión con las credenciales proporcionadas.
-
----
 
 ## Configuración de Conexión Multiplataforma
 
@@ -122,10 +148,36 @@ private static final String PASSWORD = "TU_CONTRASEÑA";
 
 ## Acceso al Sistema
 
-Una vez ejecutado el proyecto, podrás iniciar sesión con las siguientes credenciales por defecto:
+El sistema cuenta con dos tipos de usuario con diferentes niveles de acceso:
 
-- **Usuario:** `admin`  
+###  Administrador
+- **Usuario:** `admin`
 - **Contraseña:** `Admin123`
+
+**Permisos:**
+- Dashboard
+- Habitaciones
+- Huéspedes
+- Reservas
+- Pagos
+- Empleados
+- Usuarios / Roles
+- Reportes
+- Gráficos
+---
+
+### 🧾 Recepcionista
+- **Usuario:** `recepcion`
+- **Contraseña:** `Recepcion123`
+
+**Permisos:**
+- Dashboard
+- Habitaciones
+- Huéspedes
+- Reservas
+- Pagos
+
+---
 
 
 ## Notas
