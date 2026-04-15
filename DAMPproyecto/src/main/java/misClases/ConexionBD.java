@@ -9,9 +9,9 @@ import java.sql.DriverManager;
 
 public class ConexionBD {
 
-    private static final String URL = "jdbc:sqlserver://DESKTOP-BNQVQ6M:1433;databaseName=HostalDB;encrypt=false;";
-    private static final String USER = "sa";       
-    private static final String PASS = "1234";
+    private static final String URL = "jdbc:sqlserver://localhost:1433;databaseName=HostalDB;encrypt=false;";
+    private static final String USER = "cruz";       
+    private static final String PASS = "cruz2";
 
     public static Connection conectar() {
         try {
