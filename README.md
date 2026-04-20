@@ -5,6 +5,18 @@
 Aplicación multiplataforma desarrollada en Java para la gestión de un hostal.
 Permite administrar habitaciones, clientes, reservas y pagos mediante una conexión a una base de datos SQL Server.
 
+## Descripción
+
+Sistema web para la gestión de un hostal desarrollado en Java (JSP + Servlets) con SQL Server.
+
+## Características principales
+
+- Autenticación de usuarios con control de acceso por roles (Administrador y Recepcionista)
+- Manejo de sesiones
+- CRUD de habitaciones, clientes, reservas y pagos
+- Generación de reportes y gráficos
+- Arquitectura MVC
+
 ## Funcionalidades del Sistema
 
 El sistema permite gestionar las operaciones principales de un hostal mediante diferentes módulos:
