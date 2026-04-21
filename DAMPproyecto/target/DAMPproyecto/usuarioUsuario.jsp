@@ -11,7 +11,7 @@
     String role = (ses != null) ? (String) ses.getAttribute("rol") : null;
     String username = (ses != null) ? (String) ses.getAttribute("username") : null;
 
-    // ✅ Solo verificamos que esté logueado, SIN forzar rol ADMIN
+    // Solo verificamos que esté logueado, SIN forzar rol ADMIN
     if (role == null) {
         response.sendRedirect(ctx + "/login.jsp");
         return;

@@ -38,7 +38,7 @@
         }
     }
 
-    // ✅ Usar UNA SOLA variable para el id seleccionado en toda la página
+    // Usar UNA SOLA variable para el id seleccionado en toda la página
     String selReserva = request.getParameter("reservaId");
 %>
 <!DOCTYPE html>

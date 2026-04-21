@@ -5,9 +5,7 @@
 <%
     String ctx = request.getContextPath();
 
-    // ================================
-    // 📊 1. OCUPACIÓN POR MES
-    // ================================
+    //1. OCUPACIÓN POR MES
     List<String[]> ocupacionMes = new ArrayList<>();
     try (Connection cn = ConexionBD.conectar(); PreparedStatement ps = cn.prepareStatement(
             "SELECT FORMAT(FechaEntrada, 'yyyy-MM') AS Mes, COUNT(*) AS Total "
@@ -21,9 +19,7 @@
         e.printStackTrace();
     }
 
-    // ================================
-    // 💰 2. INGRESOS POR HABITACIÓN
-    // ================================
+    //2. INGRESOS POR HABITACIÓN
     List<String[]> ingresosHab = new ArrayList<>();
     try (Connection cn = ConexionBD.conectar(); PreparedStatement ps = cn.prepareStatement(
             "SELECT h.Numero, SUM(p.Monto) AS Total "
@@ -40,9 +36,7 @@
         e.printStackTrace();
     }
 
-    // ================================
-    // 🛎️ 3. SERVICIOS MÁS VENDIDOS
-    // ================================
+    // 3. SERVICIOS MÁS VENDIDOS
     List<String[]> serviciosVendidos = new ArrayList<>();
     try (Connection cn = ConexionBD.conectar(); PreparedStatement ps = cn.prepareStatement(
             "SELECT Servicios, COUNT(*) AS Total "
@@ -91,9 +85,7 @@
                 drawServicios();
             }
 
-            // ============================
-            // 📊 1. OCUPACIÓN POR MES
-            // ============================
+            // 1. OCUPACIÓN POR MES
             function drawOcupacion() {
                 var data = google.visualization.arrayToDataTable([
                     ['Mes', 'Reservas'],
@@ -112,9 +104,7 @@
                 chart.draw(data, options);
             }
 
-            // ============================
-            // 💰 2. INGRESOS POR HABITACIÓN
-            // ============================
+            // 2. INGRESOS POR HABITACIÓN
             function drawIngresos() {
                 var data = google.visualization.arrayToDataTable([
                     ['Habitación', 'Ingresos'],
@@ -132,9 +122,7 @@
                 chart.draw(data, options);
             }
 
-            // ============================
-            // 🛎️ 3. SERVICIOS MÁS VENDIDOS
-            // ============================
+            // 3. SERVICIOS MÁS VENDIDOS
             function drawServicios() {
                 var data = google.visualization.arrayToDataTable([
                     ['Servicio', 'Cantidad'],
