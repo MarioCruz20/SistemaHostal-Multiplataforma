@@ -13,11 +13,12 @@ Sistema web para la gestión de un hostal desarrollado en Java (JSP + Servlets) 
 - Arquitectura MVC
 
 ## Capturas del sistema
-### Vista de login (Login como admin)
+### Vista de login
 <img width="1210" height="890" alt="Screenshot 2026-04-22 084152" src="https://github.com/user-attachments/assets/a01b9825-504d-4228-b10d-dd4333e38fc0" />
 
 ### Vista de dashboard
-<img width="1220" height="888" alt="Screenshot 2026-04-22 084224" src="https://github.com/user-attachments/assets/85c41da5-eb39-4f43-88e9-5ae1459c3d10" />
+<img width="1216" height="901" alt="Screenshot 2026-04-22 084209" src="https://github.com/user-attachments/assets/79bf1c4d-2f8b-478d-ac43-98db3ab364e1" />
+
 ### Control de acceso para roles (admin)
 <img width="1220" height="888" alt="Screenshot 2026-04-22 084224" src="https://github.com/user-attachments/assets/28fb8ede-b2d5-400b-980f-48272b86d3fd" />
 
