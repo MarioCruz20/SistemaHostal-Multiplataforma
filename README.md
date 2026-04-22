@@ -1,4 +1,4 @@
-Sistema de Gestión de Hostal
+# Sistema de Gestión de Hostal
 
 ## Descripción
 
