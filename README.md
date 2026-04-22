@@ -1,4 +1,4 @@
-<img width="1220" height="888" alt="Screenshot 2026-04-22 084224" src="https://github.com/user-attachments/assets/85c41da5-eb39-4f43-88e9-5ae1459c3d10" /># Sistema de Gestión de Hostal
+Sistema de Gestión de Hostal
 
 ## Descripción
 
@@ -17,8 +17,7 @@ Sistema web para la gestión de un hostal desarrollado en Java (JSP + Servlets) 
 <img width="1210" height="890" alt="Screenshot 2026-04-22 084152" src="https://github.com/user-attachments/assets/a01b9825-504d-4228-b10d-dd4333e38fc0" />
 
 ### Vista de dashboard
-<img width="1210" height="890" alt="Screenshot 2026-04-22 084152" src="https://github.com/user-attachments/assets/ff2819d5-3565-4d91-b872-1327b29c3d83" />
-
+<img width="1220" height="888" alt="Screenshot 2026-04-22 084224" src="https://github.com/user-attachments/assets/85c41da5-eb39-4f43-88e9-5ae1459c3d10" />
 ### Control de acceso para roles (admin)
 <img width="1220" height="888" alt="Screenshot 2026-04-22 084224" src="https://github.com/user-attachments/assets/28fb8ede-b2d5-400b-980f-48272b86d3fd" />
 
