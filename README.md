@@ -2,12 +2,7 @@
 
 ## Descripción
 
-Aplicación multiplataforma desarrollada en Java para la gestión de un hostal.
-Permite administrar habitaciones, clientes, reservas y pagos mediante una conexión a una base de datos SQL Server.
-
-## Descripción
-
-Sistema web para la gestión de un hostal desarrollado en Java (JSP + Servlets) con SQL Server.
+Sistema web para la gestión de un hostal desarrollado en Java (JSP + Servlets) con SQL Server, que permite administrar habitaciones, clientes, reservas y pagos.
 
 ## Características principales
 
@@ -70,6 +65,68 @@ El sistema permite gestionar las operaciones principales de un hostal mediante d
 * SQL Server Management Studio (SSMS)
 * Conexión a la misma red local que el servidor de base de datos
 
+
+## Instalación de JDK
+
+1. Descargar JDK (versión 8 u 11 recomendada):
+https://www.oracle.com/java/technologies/javase-downloads.html
+
+2. Instalar el JDK siguiendo los pasos del instalador
+
+3. Verificar instalación abriendo una terminal:
+
+```bash
+java -version
+```
+---
+## Instalación de Apache Tomcat 9
+
+1. Ir a:
+https://tomcat.apache.org/
+
+2. Seleccionar "Tomcat 9" en la sección de descargas
+
+3. Descargar:
+"64-bit Windows zip"
+
+4. Descomprimir el archivo
+
+5. Renombrar la carpeta a:
+webserver
+
+6. Mover la carpeta a:
+C:\webserver
+
+## Configuración de Apache Tomcat en NetBeans
+
+1. Abrir Apache NetBeans
+
+2. Ir a la pestaña "Services" (Servicios)
+
+3. Clic derecho en "Servers"
+
+4. Seleccionar "Add Server..."
+
+5. Elegir:
+Apache Tomcat or TomEE
+
+6. En "Server Location":
+- Seleccionar la carpeta:
+  C:\webserver
+
+7. Marcar:
+- Use Private Configuration Folder (Catalina Base)
+- Volver a seleccionar la carpeta:
+  C:\webserver
+
+
+9. Ingresar:
+  - Username
+  - Password  
+(Marcar "Create user if it doesn't exist")
+
+10. Seleccionar **"Finish"** para finalizar la configuración
+
 ## Instalación de la Base de Datos
 
 Puedes configurar la base de datos utilizando cualquiera de las siguientes opciones:
@@ -123,7 +180,7 @@ private static final String PASSWORD = "TU_CONTRASEÑA";
 > Asegúrate de que SQL Server esté en ejecución en tu máquina local.
 
 
-## Configuración de Conexión Multiplataforma
+## Configuración de Conexión por direccón IP
 
 El proyecto requiere conectarse a la base de datos mediante la **dirección IP del servidor**  donde esté el servidor SQL Server con la base de datos HostalDB dentro de la misma red.
 
