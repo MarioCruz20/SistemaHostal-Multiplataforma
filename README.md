@@ -199,7 +199,7 @@ private static final String PASSWORD = "TU_CONTRASEÑA";
 > Asegúrate de que SQL Server esté en ejecución en tu máquina local.
 
 
-## Configuración de Conexión por direccón IP
+## OPCIONAL: Configuración de Conexión por direccón IP
 
 El proyecto requiere conectarse a la base de datos mediante la **dirección IP del servidor**  donde esté el servidor SQL Server con la base de datos HostalDB dentro de la misma red.
 
@@ -254,7 +254,7 @@ El sistema cuenta con dos tipos de usuario con diferentes niveles de acceso:
 - Gráficos
 ---
 
-### 🧾 Recepcionista
+### Recepcionista
 - **Usuario:** `recepcion`
 - **Contraseña:** `Recepcion123`
 
